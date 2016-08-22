@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * Admin Dark Theme v 1.0.0
+ *
+ * @author Piotr Markiewicz (pmarki)
+ * @copyright Piotr Markiewicz
+ * This is a color style for Admin Reno theme
+ * ProcessWire 2.8
+ * Copyright (C) 2011 by Ryan Cramer
+ * Licensed under GNU/GPL v2, see LICENSE.TXT
+ *
+ * http://www.processwire.com
+ *
+ */
+
+
+class AdminDark extends Process implements Module {
+
+    /**
+     * getModuleInfo is a module required by all modules to tell ProcessWire about them
+     *
+     * @return array
+     *
+     */
+    public static function getModuleInfo() {
+
+        return array(
+            'title' => 'Admin Dark Theme',
+            'version' => 100,
+            'summary' => 'Dark color style for Reno theme.',
+            'author' => 'Piotr Markiewicz',
+            'singular' => true,
+            'autoload' => 'template=admin'
+        );
+    }
+
+    public function init() {
+        parent::init();
+    }
+}

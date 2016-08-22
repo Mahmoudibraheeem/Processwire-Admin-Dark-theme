@@ -1,0 +1,526 @@
+body {
+	background-color: #f0f3f7;
+}
+
+#masthead,
+.main-nav-toggle {
+	height: 50px;
+	background-color: #19222C !important;
+	border-left: none;
+}
+
+#masthead #site-name {
+	float: left;
+	margin-left: 50px;
+	padding: 1em 1.2em 1em 1.2em;
+	color: #fff;
+}
+
+#masthead #site-name a {
+	color: #fff;
+	padding-right: 7px;
+} 
+
+#masthead .nav {
+	float: left;
+}
+
+#masthead .nav li {
+	display: inline-block;
+	padding-top: 1em;
+}
+
+#masthead .nav li a, 
+#masthead .nav li i {
+	color: #8d939e;
+	margin-right: 5px;
+	line-height: 1.2em;
+}
+
+#masthead .nav li a:hover, 
+#masthead .nav li i:hover {
+	color: #fff;
+}
+
+#breadcrumbs {
+	display: none;
+}
+
+#head_button button {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#head_button .ui-button-text {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#headline {
+	transition: all 0.4s ease;
+}
+
+#headline.sticky { 
+	position: fixed;
+	top: 0;
+	left:0;
+	right: 0;
+	background-color: #1C2836;
+	color: #fff;
+	z-index: 15;
+}
+
+#headline.sticky #title {
+	color: #fff;
+}
+
+#headline.sticky #head_button {
+	top: auto;
+}
+
+#notices {
+	position: fixed;
+	max-height: 50vh;
+	overflow: auto;
+	bottom: 15px;
+	box-shadow: 0px 0px 7px 2px rgba(167, 167, 167, 0.59);
+	z-index: 10;
+}
+
+#content {
+	padding-top: 60px;
+	background-color: #f0f3f7;
+}
+
+.content #fieldgroupContext {
+	top: 3em;
+	z-index: 5;
+}
+
+a,
+#content .WireTabs a,
+#content .WireTabs #_ProcessPageEditView,
+.content .PageList a.PageListPage {
+	color: #266b96;
+}
+
+#content .WireTabs a:not(.on):hover {
+    color: #1C2836;
+    border-top-color: #d9e1ea;
+    border-right-color: #d9e1ea;
+    border-bottom-color: #FFF;
+    border-left-color: #d9e1ea;
+    background: RGBA(255, 255, 255, 0.49);
+}
+
+#wrap,
+#content .maxColHeightSpacer,
+{
+	background-color: #f0f3f7;
+}
+
+.InputfieldContent .maxColHeightSpacer {
+	background-color: transparent !important;
+}
+
+.Inputfield_admin_column_left .maxColHeightSpacer,
+.Inputfield_admin_column_right .maxColHeightSpacer {
+	background-color: #f0f3f7 !important;
+}
+
+.Inputfields .Inputfield {
+	background-color: transparent;
+}
+
+.InputfieldHeader {
+	background-color: #fff !important;
+}
+
+.Inputfield_submit_delete .InputfieldContent {
+	background-color: #f0f3f7 !important;
+	margin-top: 0 !important;
+	border-top: 1px solid #d9e1ea !important;
+}
+
+.Inputfield_submit_delete .InputfieldContent button{
+	margin-top: 1em !important;
+}
+
+.Inputfields .InputfieldStateCollapsed .InputfieldHeader:hover {
+    background-color:  rgb(249, 251, 255) !important
+}
+
+.Inputfields .InputfieldFieldset:not(.InputfieldStateCollapsed) > .InputfieldHeader {
+	background-color: #fff;
+}
+
+.content .AdminDataTableSortable tr.tablesorter-headerRow th.tablesorter-headerAsc,
+ .content .AdminDataTableSortable tr.tablesorter-headerRow th.tablesorter-headerDesc {
+	color: #e83561;
+ }
+
+.content .AdminDataList {
+	background-color: #fff;
+	border: 1px solid #d9e1ea;
+	padding: 1em;
+}
+
+#ProcessListerResults {
+	background-color: #fff;
+	border: 1px solid #d9e1ea;
+}
+
+.content .AdminDataList thead th:first-child,
+.content .AdminDataList thead th.header:first-child,
+.content .AdminDataList tbody td:first-child,
+.content .AdminDataList tfoot td:first-child {
+   	padding-left: 1em !important;
+}
+
+#ProcessTemplateList .InputfieldMarkup {
+    margin-bottom: 1em !important;
+}
+
+.PageListRoot > .PageList {
+	background-color: #fff;
+	border: 1px solid #d9e1ea;
+	padding: 1em;
+}
+
+.InputfieldContent .PageListRoot > .PageList {
+	border: none;
+}
+
+.content .PageList .PageListItemOpen > a.PageListPage {
+	background-color: transparent;
+	font-weight: bold;
+}
+
+.content li.action a,
+.content .actions a,
+.content .PageList .actions a,
+.content .PageListMoveNote a {
+   	color: #e83561;
+}
+
+.content .actions a:hover,
+.content li.action a:hover,
+.content .PageListMoveNote a:hover {
+    color: #FFF !important;
+    background: #e83561;
+    border: 1px solid #e83561;
+ }
+
+/*background in repeater*/
+.Inputfields .InputfieldRepeater > .InputfieldContent .InputfieldRepeaterItem .maxColHeightSpacer {
+	background-color: #fff !important;
+}
+
+#branding {
+	height: 40px;
+	background-color: #19222C;
+}
+
+#branding #logo {
+	margin-top: .7em;
+}
+
+#sidebar {
+	padding-top: 50px;
+	position: fixed;
+	background-color: #19222C;
+	border-right: none;
+}
+
+#sidebar #main-nav {
+	height: auto;
+}
+
+#sidebar #main-nav > li > a > i {
+	margin: 0;
+}
+
+
+#sidebar #main-nav > li > a:hover {
+	background: #d2dce6;
+color: #2c3e50;
+}
+
+#sidebar #main-nav ul li a {
+	color: #fff;
+}
+
+#sidebar #main-nav li ul,
+#sidebar a.open,
+#sidebar .current.parent {
+	background-color: transparent;
+}
+#sidebar .single {
+	background: #3C95CD !important;
+	color: #FFF;
+}
+
+#sidebar #main-nav a.current:not(.parent)::after {
+	top: 7px;
+}
+
+#sidebar #main-nav li ul {
+	padding-left: 0;
+}
+
+#sidebar #main-nav li ul li a{
+	padding-left: 3em;
+}
+
+#sidebar #main-nav li ul li ul {
+	top: 40px;
+}
+
+#main-nav > li > ul{ display: block !important; }
+#main-nav > li { background-color: transparent !important; }
+
+/*hide modules ul*/
+#main-nav .parent.module + ul {
+	display: none !important;
+}
+
+/*hide access ul, but show it on hover*/
+#main-nav .parent.access + ul {
+	display: none !important;
+}
+
+#main-nav .parent.access:hover + ul,
+#main-nav .parent.access + ul:hover  {
+	display: block !important;
+}
+
+#sidebar #main-nav a {
+	color: #fff;
+	padding: 4px .5em 4px 1.5em;
+}
+
+#sidebar #main-nav li > a.current.single > i {
+	color: #fff;
+}
+
+#sidebar #main-nav a.current i.current-icon {
+	display: none;
+}
+
+#sidebar a.parent::after {
+	display: none;
+}
+
+/*quick links*/
+#sidebar #main-nav li ul li ul {
+	box-shadow: 2px 3px 7px 2px rgba(167, 167, 167, 0.59);
+	margin-left: 0;
+}
+#sidebar .quicklink-open {
+	visibility: visible;
+}
+
+.Inputfields .InputfieldFieldsetOpen > .InputfieldHeader + .InputfieldContent {
+ 	background-color: #fff;
+}
+
+.Inputfields .InputfieldItemList:not(.InputfieldStateCollapsed) > .InputfieldHeader,
+  .Inputfields .InputfieldFieldsetOpen:not(.InputfieldStateCollapsed) > .InputfieldHeader,
+.Inputfields .InputfieldItemList > .InputfieldHeader + .InputfieldContent,
+.Inputfields .InputfieldFieldset > .InputfieldHeader + .InputfieldContent,
+.Inputfields .InputfieldFieldsetOpen > .InputfieldHeader + .InputfieldContent,
+.Inputfields .Inputfield.InputfieldImage .InputfieldHeader,
+.Inputfields .Inputfield.InputfieldImage .InputfieldContent,
+.Inputfields .InputfieldRepeater {
+	background-color: #fff !important;
+}
+
+#masthead #topnav li.dropdown ul.open {
+	z-index: 13 !important;
+}
+
+.ui-button, button.ui-button.ui-state-default, 
+.ui-button.ui-state-default {
+	background-color: #3C7DA5;
+	border-color: #296A93;
+}
+
+.ui-button.ui-priority-secondary {
+	border-color: #8d939e !important;
+}
+
+button.ui-button.ui-priority-secondary:hover,
+ .ui-button.ui-priority-secondary:hover {
+ 	background-color: #627c9b !important;
+ 	border-color: #8d939e !important;
+ }
+
+.Inputfields .InputfieldRepeater > .InputfieldContent .InputfieldRepeaterItem > .InputfieldHeader,
+.Inputfields .InputfieldRepeater > .InputfieldContent .InputfieldRepeaterItem > .InputfieldHeader:hover {
+	background-color: #96bfd8 !important;
+	border-color: #96bfd8;
+	color: #2c3e50;
+}
+
+/*files*/
+.Inputfields .InputfieldItemList .InputfieldItemHeader {
+	background-color: #96bfd8 !important;
+	border-color: #96bfd8;
+	color: #2c3e50;
+}
+
+.Inputfields .InputfieldItemList .InputfieldItemHeader a {
+	color: #2c3e50 !important;
+}
+
+.content li.ui-state-default,
+.content li.ui-state-hover,
+.content li.ui-state-default a,
+.content li.ui-state-hover a,
+ .content .ui-widget-content li.ui-state-default {
+	background-color: #f0f3f7 !important;
+	border-color: #96bfd8;
+	color: #2c3e50;
+}
+
+.content li.ui-state-hover {
+	border-color: #296A93;
+}
+
+.Inputfields .InputfieldRepeater > .InputfieldContent .InputfieldRepeaterItem > .InputfieldContent {
+	border: 2px solid #96bfd8;
+}
+
+#footer {
+	border-top: none;
+	background-color: transparent;
+}
+
+#footer #userinfo {
+	display: none;
+}
+
+#headline {
+	padding: .2em 1em;
+	margin-bottom: 1em;
+	background-color: #19222C;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 7;
+}
+
+#headline #title {
+	padding-top: .4em;
+	padding-bottom: .4em;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+/*modal*/
+.ui-dialog .ui-dialog-titlebar {
+	background-color: #1C2836 !important;
+	border: 2px solid #f0f3f7;
+}
+
+html.modal,
+.ui-dialog .ui-dialog-buttonpane {
+	background-color: #f0f3f7;
+}
+
+body.modal #content {
+	padding-top: 10px;
+}
+
+body.modal {
+	margin-top: 0;
+}
+
+body.modal #notices{
+	margin: 0px;
+	padding: 0;
+}
+
+body.modal #headline {
+	
+	padding: .2em 1em;
+	margin-bottom: 1em;
+	background-color: #1C2836;
+}
+
+body.modal #headline #title {
+	padding-top: .4em;
+	padding-bottom: .4em;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+body.modal #submit_save {
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	z-index: 16;
+}
+
+body.modal #submit_save .ui-button-text {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.cke_top, .cke_bottom {
+	background: none !important;
+}
+
+/*login screen */
+.id-23 #headline {
+	display: none;
+}
+
+.id-23 #masthead {
+	padding: 0 2rem;
+	text-align: center;
+}
+.id-23 #masthead #site-name {
+	float: none;
+	font-weight: bold;
+	color: #fff;
+	margin: 0;
+}
+
+.id-23 #masthead .nav {
+	display: none;
+}
+
+.id-23 #content {
+	text-align: center;
+}
+
+.id-23 #footer {
+	display: none;
+}
+
+ul.Inputfields #wrap_login_name, 
+ul.Inputfields #wrap_login_pass {
+	width: 220px !important;
+	float: none !important;
+	margin: 0 auto !important;
+	display: block;
+}
+
+ul.Inputfields #wrap_login_name i, 
+ul.Inputfields #wrap_login_pass i {
+	display: none;
+}
+
+#wrap_login_name .InputfieldContent{
+	border-bottom: none;
+}
+#wrap_login_pass .InputfieldHeader{
+	border-top: none;
+}
+
+#wrap_Inputfield_login_submit {
+	float: none !important;
+	margin: 0 auto 50px !important;
+}
+

@@ -42,6 +42,13 @@ body {
 	color: #fff;
 }
 
+#masthead #NotificationBug {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: inline-block;
+}
+
 #breadcrumbs {
 	display: none;
 }
@@ -226,14 +233,10 @@ a,
 }
 
 #sidebar {
-	padding-top: 50px;
+	padding-top: 61px;
 	position: fixed;
 	background-color: #19222C;
 	border-right: none;
-}
-
-#sidebar #main-nav {
-	height: auto;
 }
 
 #sidebar #main-nav > li > a > i {
@@ -243,7 +246,7 @@ a,
 
 #sidebar #main-nav > li > a:hover {
 	background: #d2dce6;
-color: #2c3e50;
+	color: #2c3e50;
 }
 
 #sidebar #main-nav ul li a {
@@ -256,6 +259,11 @@ color: #2c3e50;
 	background-color: transparent;
 }
 #sidebar .single {
+	background: #3C95CD !important;
+	color: #FFF;
+}
+
+#sidebar .current.parent.access.open {
 	background: #3C95CD !important;
 	color: #FFF;
 }
@@ -299,7 +307,8 @@ color: #2c3e50;
 	padding: 4px .5em 4px 1.5em;
 }
 
-#sidebar #main-nav li > a.current.single > i {
+#sidebar #main-nav li > a.current.single > i,
+#sidebar .current.parent.access.open i {
 	color: #fff;
 }
 
@@ -313,7 +322,7 @@ color: #2c3e50;
 
 /*quick links*/
 #sidebar #main-nav li ul li ul {
-	box-shadow: 2px 3px 7px 2px rgba(167, 167, 167, 0.59);
+	box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.19);
 	margin-left: 0;
 }
 #sidebar .quicklink-open {
@@ -400,12 +409,19 @@ button.ui-button.ui-priority-secondary:hover,
 	display: none;
 }
 
+#footer #debug_toggle {
+	color: #3C95CD !important;
+	margin: 0;
+	padding-left: 0 !important;
+}
+
 #headline {
 	padding: .2em 1em;
 	margin-bottom: 1em;
 	background-color: #19222C;
 	position: absolute;
 	width: 100%;
+	height: 43px;
 	top: 0;
 	z-index: 7;
 }

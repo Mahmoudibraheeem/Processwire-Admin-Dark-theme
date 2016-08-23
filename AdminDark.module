@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Admin Dark Theme v 1.0.0
+ * Admin Dark Theme v 1.0.1
  *
  * @author Piotr Markiewicz (pmarki)
  * @copyright Piotr Markiewicz
@@ -27,7 +27,7 @@ class AdminDark extends Process implements Module {
 
         return array(
             'title' => 'Admin Dark Theme',
-            'version' => 100,
+            'version' => 101,
             'summary' => 'Dark color style for Reno theme.',
             'author' => 'Piotr Markiewicz',
             'singular' => true,

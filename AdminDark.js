@@ -29,5 +29,7 @@ $(document).ready(function() {
         return false;
     });
 
-	$('#footer').appendTo($('#sidebar'));
+	$('#footer').appendTo($('#sidebar #main-nav'));
+
+	$('#topnav').prepend($('#NotificationBug'));
 });

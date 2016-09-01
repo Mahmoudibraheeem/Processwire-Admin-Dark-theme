@@ -1,4 +1,4 @@
-body {
+body, #main {
 	background-color: #f0f3f7;
 }
 
@@ -42,7 +42,7 @@ body {
 	color: #fff;
 }
 
-#masthead #NotificationBug {
+#masthead #NotificationBug.in-nav {
 	position: relative;
 	left: 0;
 	top: 0;
@@ -50,7 +50,15 @@ body {
 }
 
 #breadcrumbs {
+	background-color: #19222C;
+	color: #fff;
+	border-bottom: none;
+	padding: .4em 1.5em;
 	display: none;
+}
+
+#breadcrumbs ul a:hover {
+	color: #fff;
 }
 
 #head_button button {
@@ -64,25 +72,67 @@ body {
 }
 
 #headline {
-	transition: all 0.4s ease;
+	background-color: #19222C;
 }
 
-#headline.sticky { 
+.ad-breadcrumbs #headline {
+	padding: .2em 1em;
+	margin-bottom: 1em;
+	position: absolute;
+	width: 100%;
+	height: 43px;
+	top: 0;
+	z-index: 7;
+}
+
+#headline #title {
+	padding-top: .4em;
+	padding-bottom: .4em;
+	font-size: 1.2em;
+	color: #f0f0f0;
+}
+body:not(.ad-sticky) #headline  {
+	padding: .4em 1.4em;
+}
+
+body.ad-sticky #headline.sticky { 
 	position: fixed;
 	top: 0;
 	left:0;
 	right: 0;
-	background-color: #1C2836;
+	width: auto;
+	background-color: #19222C;
 	color: #fff;
+
 	z-index: 15;
 }
 
-#headline.sticky #title {
-	color: #fff;
+body.ad-sticky.ad-stickyFull #headline.sticky {
+	padding-left: 10px;
 }
 
-#headline.sticky #head_button {
+body.ad-sticky:not(.ad-stickyFull) #headline.sticky {
+	margin-left: 200px;
+}
+
+body.ad-sticky #headline.sticky #head_button {
 	top: auto;
+}
+
+html.aos_stickyHeaderCompact #headline,
+html.aos_stickyHeaderCompact #breadcrumbs {
+	background-color: #19222C !important;
+}
+
+html.aos_stickyHeaderCompact #masthead #topnav >li > a > i,
+html.aos_stickyHeaderCompact #masthead #topnav >li > a > span,
+html.aos_stickyHeaderCompact #masthead #topnav >li > a > span:after {
+	color: #8d939e !important;
+}
+
+html.aos_stickyHeaderCompact #search input:focus {
+    background: #265069 !important;
+    color: #fff !important;
 }
 
 #notices {
@@ -90,7 +140,7 @@ body {
 	max-height: 50vh;
 	overflow: auto;
 	bottom: 15px;
-	box-shadow: 0px 0px 7px 2px rgba(167, 167, 167, 0.59);
+	box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.19);
 	z-index: 10;
 }
 
@@ -124,6 +174,10 @@ a,
 #content .maxColHeightSpacer,
 {
 	background-color: #f0f3f7;
+}
+
+.InputfieldContent {
+	background-color: #fff;
 }
 
 .InputfieldContent .maxColHeightSpacer {
@@ -232,9 +286,13 @@ a,
 	margin-top: .7em;
 }
 
+body.ad-sticky #sidebar,
+body.ad-sticky #branding {
+	position: fixed;
+}
+
 #sidebar {
 	padding-top: 61px;
-	position: fixed;
 	background-color: #19222C;
 	border-right: none;
 }
@@ -244,13 +302,21 @@ a,
 }
 
 
-#sidebar #main-nav > li > a:hover {
+html:not(.aos_alwaysVisibleSidebarItems) #sidebar #main-nav > li > a:hover {
 	background: #d2dce6;
 	color: #2c3e50;
 }
 
+.aos_alwaysVisibleSidebarItems #sidebar #main-nav ul li a:hover {
+	color: #fff;
+}
+
 #sidebar #main-nav ul li a {
 	color: #fff;
+}
+
+#sidebar #main-nav li ul li ul li.add a {
+    color: #296388;
 }
 
 #sidebar #main-nav li ul,
@@ -258,12 +324,8 @@ a,
 #sidebar .current.parent {
 	background-color: transparent;
 }
-#sidebar .single {
-	background: #3C95CD !important;
-	color: #FFF;
-}
 
-#sidebar .current.parent.access.open {
+#sidebar .single {
 	background: #3C95CD !important;
 	color: #FFF;
 }
@@ -284,15 +346,48 @@ a,
 	top: 40px;
 }
 
-#main-nav > li > ul{ display: block !important; }
+#main-nav > li > ul{ /*display: block !important; */}
 #main-nav > li { background-color: transparent !important; }
 
-/*hide modules ul*/
-#main-nav .parent.module + ul {
+.ad-page #main-nav .parent.page + ul {
+	display: block !important;
+}
+
+.ad-pageHide #main-nav .parent.page + ul {
 	display: none !important;
 }
 
-/*hide access ul, but show it on hover*/
+.ad-setup #main-nav .parent.setup + ul {
+	display: block !important;
+}
+
+.ad-setupHide #main-nav .parent.setup + ul {
+	display: none !important;
+}
+
+.ad-module #main-nav .parent.module + ul {
+	display: block !important;
+}
+
+.ad-moduleHide #main-nav .parent.module + ul {
+	display: none !important;
+}
+
+.ad-access #main-nav .parent.access + ul {
+	display: block !important;
+}
+
+.ad-accessHide #main-nav .parent.access + ul {
+	display: none !important;
+}
+
+
+/*hide modules ul*/
+#main-nav .parent.module + ul {
+	/*display: none !important;*/
+}
+
+/*hide access ul, but show it on hover
 #main-nav .parent.access + ul {
 	display: none !important;
 }
@@ -300,7 +395,7 @@ a,
 #main-nav .parent.access:hover + ul,
 #main-nav .parent.access + ul:hover  {
 	display: block !important;
-}
+}*/
 
 #sidebar #main-nav a {
 	color: #fff;
@@ -375,7 +470,12 @@ button.ui-button.ui-priority-secondary:hover,
 .Inputfields .InputfieldItemList .InputfieldItemHeader {
 	background-color: #96bfd8 !important;
 	border-color: #96bfd8;
-	color: #2c3e50;
+	color: #2c3e50 !important;
+}
+
+.Inputfields .InputfieldItemList .InputfieldItemHeader:hover a,
+.Inputfields .InputfieldItemList .InputfieldItemHeader:hover .fa {
+	color: #3f5b7b !important;
 }
 
 .Inputfields .InputfieldItemList .InputfieldItemHeader a {
@@ -386,14 +486,24 @@ button.ui-button.ui-priority-secondary:hover,
 .content li.ui-state-hover,
 .content li.ui-state-default a,
 .content li.ui-state-hover a,
+.content li.ui-state-hover .fa,
  .content .ui-widget-content li.ui-state-default {
 	background-color: #f0f3f7 !important;
-	border-color: #96bfd8;
+	border-color: #7b9eb3;
 	color: #2c3e50;
 }
 
 .content li.ui-state-hover {
 	border-color: #296A93;
+	background-color: #e5ecf5 !important;
+}
+
+.content li.ui-state-hover a {
+		background-color: #e5ecf5 !important;
+}
+
+.content li.ui-state-hover .fa:hover {
+	color: #3f5b7b !important;
 }
 
 .Inputfields .InputfieldRepeater > .InputfieldContent .InputfieldRepeaterItem > .InputfieldContent {
@@ -415,23 +525,6 @@ button.ui-button.ui-priority-secondary:hover,
 	padding-left: 0 !important;
 }
 
-#headline {
-	padding: .2em 1em;
-	margin-bottom: 1em;
-	background-color: #19222C;
-	position: absolute;
-	width: 100%;
-	height: 43px;
-	top: 0;
-	z-index: 7;
-}
-
-#headline #title {
-	padding-top: .4em;
-	padding-bottom: .4em;
-	font-size: 1.2em;
-	color: #fff;
-}
 
 /*modal*/
 .ui-dialog .ui-dialog-titlebar {

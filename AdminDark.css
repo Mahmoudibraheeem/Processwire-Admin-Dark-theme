@@ -75,13 +75,13 @@ body, #main {
 	background-color: #19222C;
 }
 
-.ad-breadcrumbs #headline {
+.adark-breadcrumbs #headline {
+	position: absolute;
 	padding: .2em 1em;
 	margin-bottom: 1em;
-	position: absolute;
 	width: 100%;
 	height: 43px;
-	top: 0;
+	top: -53px;
 	z-index: 7;
 }
 
@@ -91,11 +91,17 @@ body, #main {
 	font-size: 1.2em;
 	color: #f0f0f0;
 }
-body:not(.ad-sticky) #headline  {
+
+#headline #title #aos_PagePreviewLink .fa{
+	color: #a1a1a1;
+
+}
+
+body:not(.adark-sticky) #headline  {
 	padding: .4em 1.4em;
 }
 
-body.ad-sticky #headline.sticky { 
+body.adark-sticky #headline.sticky { 
 	position: fixed;
 	top: 0;
 	left:0;
@@ -107,15 +113,15 @@ body.ad-sticky #headline.sticky {
 	z-index: 15;
 }
 
-body.ad-sticky.ad-stickyFull #headline.sticky {
+body.adark-sticky.adark-stickyFull #headline.sticky {
 	padding-left: 10px;
 }
 
-body.ad-sticky:not(.ad-stickyFull) #headline.sticky {
+body.adark-sticky:not(.adark-stickyFull) #headline.sticky {
 	margin-left: 200px;
 }
 
-body.ad-sticky #headline.sticky #head_button {
+body.adark-sticky #headline.sticky #head_button {
 	top: auto;
 }
 
@@ -145,12 +151,15 @@ html.aos_stickyHeaderCompact #search input:focus {
 }
 
 #content {
-	padding-top: 60px;
 	background-color: #f0f3f7;
 }
 
+body.adark-sticky #content {
+	margin-top: 50px;
+}
+
 .content #fieldgroupContext {
-	top: 3em;
+	top: 1em;
 	z-index: 5;
 }
 
@@ -286,8 +295,8 @@ a,
 	margin-top: .7em;
 }
 
-body.ad-sticky #sidebar,
-body.ad-sticky #branding {
+body.adark-sticky #sidebar,
+body.adark-sticky #branding {
 	position: fixed;
 }
 
@@ -307,8 +316,20 @@ html:not(.aos_alwaysVisibleSidebarItems) #sidebar #main-nav > li > a:hover {
 	color: #2c3e50;
 }
 
+html:not(.aos_alwaysVisibleSidebarItems) #sidebar #main-nav > li > a:hover .fa{
+	color: #2c3e50 !important;
+}
+
 .aos_alwaysVisibleSidebarItems #sidebar #main-nav ul li a:hover {
 	color: #fff;
+}
+
+.aos_alwaysVisibleSidebarItems #sidebar #main-nav .quicklinks a:hover {
+	color: #2c3e50;
+}
+
+.aos_alwaysVisibleSidebarItems #sidebar #main-nav .quicklinks li:hover {
+	background-color: #e2e9ef;
 }
 
 #sidebar #main-nav ul li a {
@@ -330,8 +351,8 @@ html:not(.aos_alwaysVisibleSidebarItems) #sidebar #main-nav > li > a:hover {
 	color: #FFF;
 }
 
-#sidebar #main-nav a.current:not(.parent)::after {
-	top: 7px;
+#sidebar #main-nav a.current::after {
+	display: none;
 }
 
 #sidebar #main-nav li ul {
@@ -349,35 +370,35 @@ html:not(.aos_alwaysVisibleSidebarItems) #sidebar #main-nav > li > a:hover {
 #main-nav > li > ul{ /*display: block !important; */}
 #main-nav > li { background-color: transparent !important; }
 
-.ad-page #main-nav .parent.page + ul {
+.adark-page #main-nav .parent.page + ul {
 	display: block !important;
 }
 
-.ad-pageHide #main-nav .parent.page + ul {
+.adark-pageHide #main-nav .parent.page + ul {
 	display: none !important;
 }
 
-.ad-setup #main-nav .parent.setup + ul {
+.adark-setup #main-nav .parent.setup + ul {
 	display: block !important;
 }
 
-.ad-setupHide #main-nav .parent.setup + ul {
+.adark-setupHide #main-nav .parent.setup + ul {
 	display: none !important;
 }
 
-.ad-module #main-nav .parent.module + ul {
+.adark-module #main-nav .parent.module + ul {
 	display: block !important;
 }
 
-.ad-moduleHide #main-nav .parent.module + ul {
+.adark-moduleHide #main-nav .parent.module + ul {
 	display: none !important;
 }
 
-.ad-access #main-nav .parent.access + ul {
+.adark-access #main-nav .parent.access + ul {
 	display: block !important;
 }
 
-.ad-accessHide #main-nav .parent.access + ul {
+.adark-accessHide #main-nav .parent.access + ul {
 	display: none !important;
 }
 

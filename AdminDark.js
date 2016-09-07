@@ -2,9 +2,9 @@
 $(window).scroll(function() {
 	if ($(this).scrollTop() > 1) {  
 		if ($('#sidebar').hasClass('closed')) {
-			$('body').addClass('ad-stickyFull');
+			$('body').addClass('adark-stickyFull');
 		} else {
-			$('body').removeClass('ad-stickyFull')
+			$('body').removeClass('adark-stickyFull')
 		}
     	$('#headline').addClass("sticky");
   	} else {
@@ -21,10 +21,10 @@ $(document).ready(function() {
 	}
 
 	if (AdminDark.options.indexOf('StickyHeader') !== -1) {
-		$('body').addClass('ad-sticky');
+		$('body').addClass('adark-sticky');
 					var breadcrumbs = $('#breadcrumbs').html();
 		$('#masthead').append(breadcrumbs);
-		$('body').addClass('ad-breadcrumbs');
+		$('body').addClass('adark-breadcrumbs');
 		$('#topnav').prepend($('#NotificationBug').addClass('in-nav'));
 	} else {
 		$('#breadcrumbs').show();
@@ -40,7 +40,7 @@ $(document).ready(function() {
 	}
 
 	if (AdminDark.options.indexOf('ExpandPages') !== -1) {
-		$('body').addClass('ad-page');
+		$('body').addClass('adark-page');
 			//open sections with single click
 		$('#main-nav a.parent.page').on('click', function(e){
     		$(this).trigger('click');
@@ -48,7 +48,7 @@ $(document).ready(function() {
 	}
 
 	if (AdminDark.options.indexOf('ExpandSetup') !== -1) {
-		$('body').addClass('ad-setup');
+		$('body').addClass('adark-setup');
 			//open sections with single click
 		$('#main-nav a.parent.setup').on('click', function(e){
     		$(this).trigger('click');
@@ -56,7 +56,7 @@ $(document).ready(function() {
 	}
 
 	if (AdminDark.options.indexOf('ExpandModules') !== -1) {
-		$('body').addClass('ad-module');
+		$('body').addClass('adark-module');
 			//open sections with single click
 		$('#main-nav a.parent.module').on('click', function(e){
     		$(this).trigger('click');
@@ -64,7 +64,7 @@ $(document).ready(function() {
 	}
 
 	if (AdminDark.options.indexOf('ExpandAccess') !== -1) {
-		$('body').addClass('ad-access');
+		$('body').addClass('adark-access');
 			//open sections with single click
 		$('#main-nav a.parent.access').on('click', function(e){
     		$(this).trigger('click');
@@ -72,7 +72,7 @@ $(document).ready(function() {
 	}
 
 	if (AdminDark.options.indexOf('CollapsedModules') !== -1) {
-		$('body').addClass('ad-moduleHide');
+		$('body').addClass('adark-moduleHide');
 		//open sections with single click
 		$('#main-nav a.parent.module').on('click', function(e){
     		$(this).trigger('click');
@@ -80,7 +80,7 @@ $(document).ready(function() {
 	}
 
 	if (AdminDark.options.indexOf('CollapsedPages') !== -1) {
-		$('body').addClass('ad-pageHide');
+		$('body').addClass('adark-pageHide');
 		//open sections with single click
 		$('#main-nav a.parent.page').on('click', function(e){
     		$(this).trigger('click');
@@ -88,7 +88,7 @@ $(document).ready(function() {
 	}
 
 	if (AdminDark.options.indexOf('CollapsedSetup') !== -1) {
-		$('body').addClass('ad-setupHide');
+		$('body').addClass('adark-setupHide');
 		//open sections with single click
 		$('#main-nav a.parent.setup').on('click', function(e){
     		$(this).trigger('click');
@@ -96,7 +96,7 @@ $(document).ready(function() {
 	}
 
 		if (AdminDark.options.indexOf('CollapsedAccess') !== -1) {
-		$('body').addClass('ad-accessHide');
+		$('body').addClass('adark-accessHide');
 		//open sections with single click
 		$('#main-nav a.parent.access').on('click', function(e){
     		$(this).trigger('click');

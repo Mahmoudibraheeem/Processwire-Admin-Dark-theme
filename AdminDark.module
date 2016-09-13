@@ -27,7 +27,7 @@ class AdminDark extends Process implements Module, ConfigurableModule {
 
         return array(
             'title' => 'Admin Dark Theme',
-            'version' => 102,
+            'version' => 104,
             'summary' => 'Dark color style for Reno theme.',
             'author' => 'Piotr Markiewicz',
             'singular' => true,

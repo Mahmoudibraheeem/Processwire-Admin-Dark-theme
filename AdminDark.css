@@ -109,7 +109,6 @@ body.adark-sticky #headline.sticky {
 	width: auto;
 	background-color: #19222C;
 	color: #fff;
-
 	z-index: 15;
 }
 
@@ -118,7 +117,14 @@ body.adark-sticky.adark-stickyFull #headline.sticky {
 }
 
 body.adark-sticky:not(.adark-stickyFull) #headline.sticky {
-	margin-left: 200px;
+	margin-left: 180px;
+    padding-left: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+    body.adark-sticky:not(.adark-stickyFull) #headline.sticky {
+        margin-left: 210px;
+    }
 }
 
 body.adark-sticky #headline.sticky #head_button {
@@ -180,8 +186,7 @@ a,
 }
 
 #wrap,
-#content .maxColHeightSpacer,
-{
+#content .maxColHeightSpacer {
 	background-color: #f0f3f7;
 }
 
@@ -653,4 +658,3 @@ ul.Inputfields #wrap_login_pass i {
 	float: none !important;
 	margin: 0 auto 50px !important;
 }
-
